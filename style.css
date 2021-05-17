@@ -1,0 +1,158 @@
+/* General rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h2{
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--Dark-gray);
+    font-size: 15px;
+}
+
+
+
+/* Variables */
+:root{
+/* primary */
+--Dark-cyan: hsl(185, 75%, 39%);
+--dark-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+/* neutral */
+--Dark-gray: hsl(0, 0%, 59%);
+/* Body Copy */
+--name-and-stats: 18px;
+}
+
+
+/* styling the main */
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: var(--Dark-cyan);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* positioning the top background */
+main .bg-top{
+    position: relative;
+    top: -70%;
+    left: -35%;
+}
+/* positioning the bottom background */
+main .bg-bottom{
+    position: absolute;
+    bottom: -100%;
+    right: -15%;
+}
+
+/* styling the card */
+main .card{
+    border-radius: 15px;
+    position: absolute;
+    overflow: hidden;
+    background: white;
+}
+.card .banner{
+    margin: 0;
+}
+.card .white-part{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.white-part .personnal-img{
+    position: absolute;
+    top:-20%;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
+.white-part .info{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    border-bottom: 1px solid var(--Dark-gray);
+}
+.white-part .info >h2{
+    margin-bottom: 1rem;
+}
+
+.white-part .info span{
+    color: var(--Dark-gray);
+    font-weight: 200;
+}
+
+.white-part .numbers{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.white-part .numbers .box{
+    padding: .5rem;
+}
+
+.box > h2{
+    margin-bottom: 5px;
+
+}
+
+.box > p{
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: .8;
+}
+
+
+
+
+/* positioning the attribution to the bottom */
+.attribution{
+    position : absolute;
+    bottom: .5rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+        color: hsl(228, 16%, 24%); 
+}
+
+@media screen and (max-width: 375px){
+
+    main{
+            width: 100vw;
+    }
+        
+    main .bg-top{
+        top: -55%;
+        left: -125%;
+    }
+
+    main .bg-bottom {
+        bottom: -100%;
+        right: -200%;
+    }
+    
+    main .card{
+            width: 90%;
+        }
+
+    
+}
