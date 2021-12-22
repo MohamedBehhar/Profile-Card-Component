@@ -34,8 +34,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/first-time-using-svg-background-SS6-bpILl)
-- Live Site URL: [Add live site URL here](https://mohamedbehhar.github.io/Profile-Card-Component/)
+- Live Site URL:(https://mohamedbehhar.github.io/Profile-Card-Component/)
 
 
 ## My process
